@@ -9,7 +9,9 @@ export function imageTemplate(item) {
     downloads,
   } = item;
 
-  return `<li class="photo-card"><a class="gallery-link" href="${largeImageURL}"><img class="gallery-image" src="${webformatURL}" alt="${tags}"/></a><div class="info"><div class="block">
+  return `<li class="photo-card">
+  <a class="gallery-link" href="${largeImageURL}">
+  <img class="gallery-image" src="${webformatURL}" alt="${tags}"/></a><div class="info"><div class="block">
   <h2 class="tittle">Likes</h2>
   <p class="amount">${likes}</p>
 </div>
