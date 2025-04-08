@@ -9,35 +9,22 @@ export function imageTemplate(item) {
     downloads,
   } = item;
 
-  return `<li class="gallery-item">
-            <a class="gallery-link" href="${largeImageURL}">
-              <img
-                class="gallery-image"
-                src="${webformatURL}"
-                alt="${tags}"
-              />
-            </a>
-            <div class="gallery-wrapper">
-              <ul class="gallery-group">
-                <li class="gallery-list">
-                  <p class="gallery-subtitle">Likes</p>
-                  <p class="gallery-txt">${likes}</p>
-                </li>
-                <li class="gallery-list">
-                  <p class="gallery-subtitle">Views</p>
-                  <p class="gallery-txt">${views}</p>
-                </li>
-                <li class="gallery-list">
-                  <p class="gallery-subtitle">Comments</p>
-                  <p class="gallery-txt">${comments}</p>
-                </li>
-                <li class="gallery-list">
-                  <p class="gallery-subtitle">Downloads</p>
-                  <p class="gallery-txt">${downloads}</p>
-                </li>
-              </ul>
-            </div>
-          </li>`;
+  return `<li class="photo-card"><a class="gallery-link" href="${largeImageURL}"><img class="gallery-image" src="${webformatURL}" alt="${tags}"/></a><div class="info"><div class="block">
+  <h2 class="tittle">Likes</h2>
+  <p class="amount">${likes}</p>
+</div>
+<div class="block">
+  <h2 class="tittle">Views</h2>
+  <p class="amount">${views}</p>
+</div>
+<div class="block">
+  <h2 class="tittle">Comments</h2>
+  <p class="amount">${comments}</p>
+</div>
+<div class="block">
+  <h2 class="tittle">Downloads</h2>
+  <p class="amount">${downloads}</p>
+</div></div></li>`;
 }
 
 export function imagesTemplate(arr) {

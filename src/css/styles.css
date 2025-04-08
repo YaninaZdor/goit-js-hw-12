@@ -26,11 +26,11 @@ button {
   border-color: #bababa;
   padding: 0px 16px;
 }
+
 .form {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  /* margin-bottom: 0px; */
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -39,25 +39,47 @@ button {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  row-gap: 20px;
   justify-content: center;
-  width: 100%;
-  list-style: none;
+  padding: 20px 0;
+}
+
+.gallery-image {
+  flex-basis: calc((100% - 80px) / 4);
+  min-width: 360px;
+}
+
+.gallery-item {
+  margin-left: 20px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid rgba(128, 128, 128, 1);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px #8561611a;
+  background-color: #fff;
 }
 
 .gallery-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-left: 20px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid rgba(128, 128, 128, 1);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px #8561611a;
+  background-color: #fff;
 }
 
 .gallery-group {
   display: flex;
-  flex-direction: row;
-  padding: 0px;
+  gap: 10px;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
+  border-top: none;
+  padding: 10px 0;
 }
 
 .sl-image {
@@ -65,15 +87,26 @@ button {
   box-shadow: 2px 2px 10px rgba(20, 16, 16, 0.438);
 }
 
-.gallery-subtitle {
-  font-size: 12px;
-  font-weight: 600;
+.block {
+  text-align: center;
 }
 
-.gallery-txt {
+.tittle {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 1);
+}
+
+.amount {
   font-size: 12px;
+  font-family: Montserrat;
   font-weight: 400;
-  margin: 0px;
+  color: rgba(46, 47, 66, 1);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .gallery-image {
@@ -116,17 +149,23 @@ button:hover {
 }
 
 .loader-text {
+  color: rgba(46, 47, 66, 1);
+  font-size: 16px;
+  font-weight: 400;
   margin-block: 48px;
   text-align: center;
   margin: 20px;
 }
 
 .photo-card {
-  width: 250px;
-  border: 1.5px solid indigo;
+  margin-left: 20px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid rgba(128, 128, 128, 1);
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 2px 2px 10px rgba(133, 97, 97, 0.1);
+  box-shadow: 2px 2px 10px #8561611a;
   background-color: #fff;
 }
 
@@ -137,7 +176,10 @@ button:hover {
 }
 
 .info {
-  padding: 10px;
-  font-size: 16px;
-  color: indigo;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-top: none;
+  padding: 10px 0;
 }
