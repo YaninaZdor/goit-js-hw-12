@@ -22,7 +22,6 @@
     "import": "^0.0.6",
     "izitoast": "^1.4.0",
     "simplelightbox": "^2.14.3",
-    "SimpleLightbox": "npm:simplelightbox@^2.14.3",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
