@@ -81,8 +81,6 @@ async function searchImages(e) {
     });
     console.log(error);
   }
-
-  // e.target.reset();
 }
 
 refs.btnNext.addEventListener('click', async () => {
